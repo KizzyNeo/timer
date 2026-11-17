@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: linear-gradient(135deg, #141e30, #243b55);
+    padding: 2vw;
+}
+
+/* Stopwatch container */
+.stopwatch-container {
+    background: #ffffff;
+    width: 100%;
+    /* max-width: 450px; */
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-size: 28px;
+    color: #243b55;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 14px;
+    color: #243b55;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Counter display */
+.counter {
+    /* font-size: clamp(36px, 10vw, 52px); */
+    font-size: 20vw;
+    font-weight: bold;
+    color: #FF0000;
+    background: #f1f5f9;
+    padding: 25px 10px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 2px;
+}
+
+/* Status message */
+.status {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#toggleButton {
+    background: #16a34a;
+    color: white;
+    min-width: 130px;
+}
+
+#toggleButton:hover {
+    background: #15803d;
+}
+
+#toggleButton.stop {
+    background: #dc2626;
+}
+
+#toggleButton.stop:hover {
+    background: #b91c1c;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:focus-visible {
+    outline: 3px solid #60a5fa;
+    outline-offset: 3px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 400px) {
+    .stopwatch-container {
+        padding: 30px 15px;
+    }
+
+    button {
+        padding: 13px 22px;
+    }
+}

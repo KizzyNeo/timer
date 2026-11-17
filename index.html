@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="stopwatch-container">
+        <h1>Stopwatch</h1>
+        <h4>(An Official Guinness World Records Record Attempt By Kizito Ajaereh)</h4>
+
+
+        <p class="description">
+            Click Start to begin counting.
+        </p>
+
+        <div class="counter" id="counter" role="timer"
+             aria-label="Elapsed time">
+            00:00:00
+        </div>
+
+        <p class="status" id="status" aria-live="polite">
+            Ready to start
+        </p>
+
+        <div class="button-container">
+            <button id="toggleButton" type="button">
+                Start
+            </button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
